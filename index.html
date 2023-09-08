@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="timer.js"></script>
     <link rel="stylesheet" href="utils.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body class='overflow-x-hidden'>
     <div class="container mx-auto">
         <header>
-            <nav class="flex justify-between">
-                <div class="logo font-bold flex items-center text-blue">MyFitness</div>
+            <nav class="flex justify-between ">
+                <div class="logo font-bold flex items-center text-blue "><h1>MyFitness</h1></div>
                 <ul class="navbar flex items-center">
                     <li>Home</li>
                     <li>About</li>
@@ -26,6 +28,27 @@
             </nav>
             <hr>
         </header>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pic4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="pic-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="pic3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <main class="min-h-screen">
             <section class="section1">
                 <div class="flex">
@@ -38,12 +61,12 @@
                             error corporis fugit dolore adipisci aperiam omnis nisi dolores hic eius in ex id iure, ea
                             sunt asperiores et voluptatibus dignissimos autem maiores molestias dolor rem delectus
                             quidem! Inventore.</p>
-                            <!-- Display the countdown timer in an element -->
-                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
-                            <div class="buttons">
-                                <button class="btn">Join now</button>
-                                <button class="btn">Contact Us</button>
-                            </div>
+                        <!-- Display the countdown timer in an element -->
+                        <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                        <div class="buttons">
+                            <button class="btn">Join now</button>
+                            <button class="btn">Contact Us</button>
+                        </div>
                     </div>
                     <div class="topright flex justify-center">
                         <img class="gymimg" src="gym.png" alt="">
@@ -99,54 +122,55 @@
                 <h1 class="text-center my-2">Compare Plans</h1>
                 <div class="container plantable">
                     <table class="table text-center">
-                      <thead>
-                        <tr>
-                          <th></th><th>Free</th>
-                          <th>Pro</th>
-                          <th>Enterprise</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row" class="text-start">Public</th>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Private</th>
-                          <td>-</td>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                        </tr>
-                      </tbody>
-              
-                      <tbody>
-                        <tr>
-                          <th scope="row" class="text-start">Permissions</th>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Sharing</th>
-                          <td>-</td>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Unlimited members</th>
-                          <td>-</td>
-                          <td>Yes</svg></td>
-                          <td>Yes</svg></td>
-                        </tr>
-                        <tr>
-                          <th scope="row" class="text-start">Extra security</th>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>Yes</svg></td>
-                        </tr>
-                      </tbody>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Free</th>
+                                <th>Pro</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Public</th>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Private</th>
+                                <td>-</td>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Permissions</th>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Sharing</th>
+                                <td>-</td>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Unlimited members</th>
+                                <td>-</td>
+                                <td>Yes</svg></td>
+                                <td>Yes</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Extra security</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Yes</svg></td>
+                            </tr>
+                        </tbody>
                     </table>
             </section>
             <hr>
@@ -156,6 +180,9 @@
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
